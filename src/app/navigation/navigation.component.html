@@ -1,0 +1,11 @@
+<div  *ngIf="tokenService.loadToken()!=null" class="toolbar" role="banner">
+  <div  fxLayout="row" fxLayoutAlign="none start" >
+    <mat-icon  class="icon-spotify" svgIcon="spotify"></mat-icon>
+  <button (click)="toSearch()"  mat-raised-button  type="button"  >
+      Search
+    </button>
+  <button (click)="Login()"  mat-raised-button  type="button"  >
+      Logout
+    </button>
+  </div>
+</div>
